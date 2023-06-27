@@ -1,0 +1,10 @@
+
+        {% if nomes_filmes %}
+        <ul>
+        {% for nome_filme in nomes_filmes %}
+            <li>{{ nome_filme }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No polls are available.</p>
+    {% endif %}
